@@ -5,6 +5,7 @@ body {
 .header {
     height: 25vh;
     min-height: 200px;
+    background: #222;
 }
 
 .header * {
@@ -12,8 +13,10 @@ body {
 }
 
 .header .gallery {
-    width: 100%;
     overflow: hidden;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header .gallery ul {
@@ -22,6 +25,13 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.navbar {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
 }
 
 .affix {
