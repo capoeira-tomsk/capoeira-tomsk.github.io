@@ -1,0 +1,17 @@
+.site-section {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.about-section {
+    background: gray;
+}
+
+.trainer-section {
+    background: lightyellow;
+}
+
+.contacts-section {
+    background: palevioletred;
+}
