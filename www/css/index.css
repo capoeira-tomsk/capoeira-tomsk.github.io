@@ -1,6 +1,50 @@
-.site-section {
+body {
+    position: relative;
+}
+
+.header {
+    height: 25vh;
+    min-height: 200px;
+}
+
+.header * {
+    height: 100%;
+}
+
+.header .gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+.header .gallery ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.affix ~ .header {
+    position: relative;
+    top: 50px;
+}
+
+section {
     width: 100%;
     min-height: 100vh;
+}
+
+section.section-next {
     padding-top: 50px;
 }
 
