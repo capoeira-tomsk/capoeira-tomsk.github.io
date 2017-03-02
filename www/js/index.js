@@ -7,7 +7,7 @@ $(function () {
         var href = $anchor.attr('href');
         var top = href && href.length > 1 ? $(href).offset().top : 0;
         if ($navbar.hasClass('affix-top')) {
-            top -= $navbar.height();
+            top -= $navbar.outerHeight();
         }
         $('html, body').stop().animate({
             scrollTop: top

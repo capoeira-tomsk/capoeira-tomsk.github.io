@@ -14,7 +14,7 @@ body {
 
 .header .gallery {
     overflow: hidden;
-    max-width: 1170px;
+    /*max-width: 1170px;*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -25,13 +25,17 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    -webkit-filter: sepia(1);
+    filter: sepia(1);
 }
 
 .navbar {
+    padding: 60px 10px 0;
     border-top: none;
     border-left: none;
     border-right: none;
     border-radius: 0;
+    margin-bottom: 0;
 }
 
 .affix {
@@ -40,13 +44,29 @@ body {
     z-index: 9999 !important;
 }
 
-.navbar {
-    margin-bottom: 0;
-}
-
 .affix ~ .header {
     position: relative;
     top: 50px;
+}
+
+.brand-icon {
+    background: url('../img/brand-icon.png') no-repeat;
+    background-size: 100% auto;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar li > .navbar-brand {
+    padding-left: 60px;
+}
+
+.navbar li {
+    display: block;
+    float: left;
 }
 
 section {
@@ -55,7 +75,7 @@ section {
 }
 
 section.section-next {
-    padding-top: 50px;
+    padding-top: 110px;
 }
 
 .about-section {
