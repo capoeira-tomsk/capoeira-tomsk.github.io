@@ -74,20 +74,37 @@ body {
 section {
     width: 100%;
     min-height: 100vh;
+    font-size: larger;
+}
+
+section.section-first {
+    padding-top: 20px;
 }
 
 section.section-next {
-    padding-top: 110px;
+    padding-top: 130px;
 }
 
-/*.about-section {*/
-    /*background: gray;*/
-/*}*/
+.about-section {
+    background: cornsilk;
+}
 
-/*.trainer-section {*/
-    /*background: lightyellow;*/
-/*}*/
+.trainer-section {
+    background: lightsalmon;
+}
 
-/*.contacts-section {*/
-    /*background: palevioletred;*/
-/*}*/
+.contacts-section {
+    background: cornsilk;
+}
+
+.about-section .jumbotron {
+    background: brown;
+    color: white;
+    border-radius: 16px;
+}
+
+.adv-heading {
+    font-size: 70%;
+    display: block;
+    margin-bottom: 1em;
+}
