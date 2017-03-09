@@ -108,3 +108,7 @@ section.section-next {
     display: block;
     margin-bottom: 1em;
 }
+
+.trainer-photo {
+    width: 100%;
+}
