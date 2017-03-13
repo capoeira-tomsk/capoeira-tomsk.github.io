@@ -112,3 +112,7 @@ section.section-next {
 .trainer-photo {
     width: 100%;
 }
+
+.contacts-section .location-details {
+    padding-top: 0.8em;
+}
