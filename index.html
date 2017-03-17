@@ -18,7 +18,8 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<!--<body data-spy="scroll" data-target=".navbar">-->
+<body>
 
 <div class="header">
     <div class="gallery">
@@ -47,20 +48,23 @@
 
 <nav class="navbar navbar-default" data-spy="affix" data-offset-top="200">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-2">
-                <img class="brand-icon" src="img/brand-icon.png"/>
-            </div>
-            <div class="col-xs-10">
-                <ul class="nav navbar-nav">
-                    <li><a href="#" class="navbar-brand page-scroll">Капоэйра в Томске</a></li>
-                    <li><a href="#trainer-section" class="page-scroll">О тренере</a></li>
-                    <li><a href="#contacts-section" class="page-scroll">Расписание</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="tel:+7-000-000-00-00"><span class="fa fa-phone-square"></span> +7-000-000-00-00</a></li>
-                </ul>
-            </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand navbar-brand-icon page-scroll"><img class="brand-icon" src="img/brand-icon.png"/></a>
+            <!--<a href="#" class="navbar-brand page-scroll"><span class="brand-title">Капоэйра в Томске</span></a>-->
+        </div>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#trainer-section" class="page-scroll">О тренере</a></li>
+                <li><a href="#contacts-section" class="page-scroll">Расписание</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="tel:+7-000-000-00-00"><span class="fa fa-phone-square"></span> +7-000-000-00-00</a></li>
+            </ul>
         </div>
     </div>
 </nav>
