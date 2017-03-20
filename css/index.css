@@ -36,6 +36,16 @@ body {
     margin-bottom: 0;
 }
 
+@media (max-width: 992px) {
+    .navbar .container {
+        min-width: 100%;
+    }
+}
+
+.navbar .container .navbar-brand:last-child {
+    margin-left: -15px;
+}
+
 .affix {
     top: 0;
     width: 100%;
@@ -73,7 +83,7 @@ body {
 .navbar-collapse.collapsing .navbar-nav li,
 .navbar-collapse.in .navbar-nav li {
     width: 100%;
-    padding-left: 140px;
+    padding-left: 155px;
 }
 
 .navbar li {
