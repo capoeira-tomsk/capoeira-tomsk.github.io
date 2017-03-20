@@ -6,7 +6,6 @@ body {
 .header {
     height: 25vh;
     min-height: 200px;
-    /*background: #222;*/
 }
 
 .header * {
@@ -98,11 +97,11 @@ section.section-next {
 }
 
 .about-section {
-    /*background: cornsilk;*/
+    background: #ffe4b5;
 }
 
 .trainer-section {
-    /*background: lightsalmon;*/
+    background: #f3a58c;
 }
 
 .contacts-section {
@@ -110,8 +109,8 @@ section.section-next {
 }
 
 .about-section .jumbotron {
-    /*background: brown;*/
-    /*color: white;*/
+    background: #adb622;
+    color: #dee677;
     border-radius: 16px;
 }
 
