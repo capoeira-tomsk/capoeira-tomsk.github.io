@@ -95,6 +95,7 @@ section {
     width: 100%;
     min-height: 100vh;
     font-size: larger;
+    padding-bottom: 60px;
 }
 
 section.section-first {
@@ -106,15 +107,15 @@ section.section-next {
 }
 
 .about-section {
-    background: #ffe4b5;
+    background: #ffdca6;
 }
 
 .trainer-section {
-    background: #f3a58c;
+    background: #f3b88c;
 }
 
 .contacts-section {
-    /*background: cornsilk;*/
+    background: #ffdca6;
 }
 
 .about-section .jumbotron {
@@ -130,11 +131,22 @@ section.section-next {
 }
 
 .trainer-photo {
-    width: 100%;
+    float: right;
+    display: block;
+    margin-left: 20px;
+    border-radius: 16px;
 }
 
 .contacts-section .location-details {
     padding-top: 0.8em;
+}
+.contacts-section iframe {
+    border: solid gray 1px;
+}
+
+.about-section p,
+.trainer-section p {
+    text-align: justify;
 }
 
 a,
