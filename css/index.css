@@ -122,10 +122,11 @@ section.section-next {
     background: #adb622;
     color: #dee677;
     border-radius: 16px;
+    padding: 16px 48px;
 }
 
 .adv-heading {
-    font-size: 70%;
+    font-size: 60%;
     display: block;
     margin-bottom: 1em;
 }

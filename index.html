@@ -100,12 +100,13 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="#" class="navbar-brand navbar-brand-icon page-scroll"><img class="brand-icon" src="img/brand-icon.png"/></a>
-            <a href="#" class="navbar-brand page-scroll"><span class="brand-title">Капоэйра в Томске</span></a>
+            <!--<a href="#" class="navbar-brand page-scroll"><span class="brand-title">Капоэйра в Томске</span></a>-->
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
                 <li><a href="#trainer-section" class="page-scroll">О тренере</a></li>
                 <li><a href="#contacts-section" class="page-scroll">Расписание</a></li>
+                <li><a href="#news-section" class="page-scroll"><i class="fa fa-vk"></i> Новости</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="tel:+7-903-950-34-16"><span class="fa fa-phone-square"></span> +7-903-950-34-16</a></li>
@@ -123,6 +124,7 @@
                     <p><a href="#contacts-section" class="btn btn-primary btn-lg page-scroll">Записаться <i class="fa fa-angle-double-right "></i></a>
                     </p>
                 </div>
+                <div id="vk_groups"></div>
             </div>
             <div class="col-md-8">
                 <h1>Что такое Капоэйра?</h1>
@@ -223,7 +225,8 @@
                 </p>
             </div>
             <div class="col-md-9 location-details">
-                <p><i class="fa fa-map-marker"></i> Фрунзе 119/5 стр.6, зал Союза Спортивной молодежи, клуба рукопашного боя Гроза</p>
+                <p><i class="fa fa-map-marker"></i> Фрунзе 119/5 стр.6, зал Союза Спортивной молодежи, клуба рукопашного
+                    боя Гроза</p>
                 <iframe
                         width="100%" height="300"
                         frameborder="no"
@@ -235,11 +238,26 @@
     </div>
 </section>
 
+<section id="news-section" class="section-next news-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div id="vk_news"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
 
 <script src="js/index.js"></script>
+<script type="text/javascript">
+    VK.Widgets.Group("vk_groups", {mode: 3, width: "auto", color1: 'ffdca6', color2: '7d5f11', color3: '7d5f11'}, 133258069);
+    VK.Widgets.Group("vk_news", {mode: 4, wide: 1, width: "auto", height: "800"}, 133258069);
+</script>
 
 </body>
 
