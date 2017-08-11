@@ -104,8 +104,8 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li><a href="#trainer-section" class="page-scroll">О тренере</a></li>
-                <li><a href="#contacts-section" class="page-scroll">Расписание</a></li>
+                <li><a href="#trainer-section" class="page-scroll"><i class="fa fa-user"></i> О тренере</a></li>
+                <li><a href="#contacts-section" class="page-scroll"><i class="fa fa-calendar"></i> Расписание</a></li>
                 <li><a href="#news-section" class="page-scroll"><i class="fa fa-vk"></i> Новости</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -124,7 +124,7 @@
                     <p><a href="#contacts-section" class="btn btn-primary btn-lg page-scroll">Записаться <i class="fa fa-angle-double-right "></i></a>
                     </p>
                 </div>
-                <div id="vk_groups"></div>
+                <div id="vk_groups" class="widget-vk"></div>
             </div>
             <div class="col-md-8">
                 <h1>Что такое Капоэйра?</h1>
@@ -242,7 +242,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div id="vk_news"></div>
+                <div id="vk_news" class="widget-vk"></div>
             </div>
         </div>
     </div>
@@ -256,7 +256,7 @@
 <script src="js/index.js"></script>
 <script type="text/javascript">
     VK.Widgets.Group("vk_groups", {mode: 3, width: "auto", color1: 'ffdca6', color2: '7d5f11', color3: '7d5f11'}, 133258069);
-    VK.Widgets.Group("vk_news", {mode: 4, wide: 1, width: "auto", height: "800"}, 133258069);
+    VK.Widgets.Group("vk_news", {mode: 4, wide: 1, width: "auto", height: window.innerHeight}, 133258069);
 </script>
 
 </body>
