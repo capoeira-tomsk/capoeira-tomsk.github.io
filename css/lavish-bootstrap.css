@@ -1272,7 +1272,8 @@ mark,
   text-transform: capitalize; }
 
 .text-muted {
-  color: #B48B1A; }
+  /*color: #B48B1A; }*/
+  color: #777; }
 
 .text-primary {
   color: #937014; }
