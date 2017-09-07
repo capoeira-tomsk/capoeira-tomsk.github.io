@@ -3,7 +3,7 @@ $(function () {
         event.preventDefault();
 
         var $anchor = $(this);
-        var $navbar = $anchor.closest('.navbar');
+        var $navbar = $('nav');
         var href = $anchor.attr('href');
         var top = href && href.length > 1 ? $(href).offset().top : 0;
         if ($navbar.hasClass('affix-top')) {
