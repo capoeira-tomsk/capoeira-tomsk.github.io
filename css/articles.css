@@ -1,0 +1,12 @@
+.articles-section p {
+    text-align: justify;
+}
+
+.articles-section img {
+    max-width: 100%;
+    margin: 0 10px;
+}
+
+.section-even {
+    background: #e6f67d;
+}
