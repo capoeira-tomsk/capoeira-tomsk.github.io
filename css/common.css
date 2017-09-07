@@ -1,0 +1,114 @@
+body {
+    position: relative;
+    font-size: 16px;
+}
+
+.header {
+    height: 25vh;
+    min-height: 200px;
+}
+
+.header * {
+    height: 100%;
+}
+
+.header .gallery {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header .gallery ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-filter: sepia(1);
+    filter: sepia(1);
+}
+
+.navbar {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .navbar .container {
+        min-width: 100%;
+    }
+}
+
+.navbar .container .navbar-brand:last-child {
+    margin-left: -15px;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.affix ~ .header {
+    position: relative;
+    top: 50px;
+}
+
+.navbar-brand-icon {
+    padding-top: 0;
+}
+
+.brand-icon {
+    width: 140px;
+    margin-top: -40%;
+    margin-bottom: -60%;
+    position: relative;
+    display: block;
+    z-index: 100;
+    transition: all 400ms;
+}
+
+.affix .brand-icon {
+    width: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.brand-title {
+}
+
+.navbar-collapse.collapsing .navbar-nav li,
+.navbar-collapse.in .navbar-nav li {
+    width: 100%;
+    padding-left: 155px;
+}
+
+.navbar li {
+    display: block;
+    float: left;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    font-size: larger;
+    padding-bottom: 60px;
+}
+
+section.section-first {
+    padding-top: 60px;
+}
+
+section.section-next {
+    padding-top: 80px;
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+    outline: none;
+}
