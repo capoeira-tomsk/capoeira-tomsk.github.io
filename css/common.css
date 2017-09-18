@@ -80,10 +80,44 @@ body {
 .brand-title {
 }
 
-.navbar-collapse.collapsing .navbar-nav li,
-.navbar-collapse.in .navbar-nav li {
-    width: 100%;
-    padding-left: 155px;
+.navbar-collapse.collapsing .navbar-nav,
+.navbar-collapse.in .navbar-nav {
+    float: right !important;
+    display: block;
+    padding-left: 120px;
+    margin-right: -15px;
+}
+
+.navbar-collapse.collapsing .navbar-nav:not(.navbar-right),
+.navbar-collapse.in .navbar-nav:not(.navbar-right) {
+    margin-bottom: 0;
+}
+
+.navbar-collapse.collapsing .navbar-nav.navbar-right,
+.navbar-collapse.in .navbar-nav.navbar-right {
+    margin-top: 0;
+}
+
+.navbar-collapse.collapsing .navbar-nav.navbar-right li,
+.navbar-collapse.in .navbar-nav.navbar-right li {
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-collapse.collapsing .navbar-nav,
+    .navbar-collapse.in .navbar-nav {
+        float: left !important;
+    }
+
+    .navbar-collapse.collapsing .navbar-nav li,
+    .navbar-collapse.in .navbar-nav li {
+        width: 100%;
+    }
+
+    .navbar-collapse.collapsing .navbar-nav.navbar-right li,
+    .navbar-collapse.in .navbar-nav.navbar-right li {
+        float: none;
+    }
 }
 
 .navbar li {
