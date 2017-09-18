@@ -1,5 +1,5 @@
 $(function () {
-    $('a.page-scroll').on('click', function (event) {
+    $(document).on('click', 'a.page-scroll', function (event) {
         event.preventDefault();
 
         var $anchor = $(this);
@@ -16,5 +16,9 @@ $(function () {
         location.hash = this.hash;
 
         return false;
+    });
+
+    $(document).on('click', '.navbar-collapse.in .navbar-nav a', function (event) {
+        $(this).closest('.navbar-collapse.in').collapse('hide');
     });
 });
