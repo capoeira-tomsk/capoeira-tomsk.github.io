@@ -27,6 +27,7 @@
     float: right;
     display: block;
     padding: 0 16px;
+    max-width: 100%;
 }
 
 .contacts-section .location-details {
