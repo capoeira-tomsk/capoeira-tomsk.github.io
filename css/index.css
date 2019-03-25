@@ -30,11 +30,16 @@
     max-width: 100%;
 }
 
-.contacts-section .location-details {
-    padding-top: 0.8em;
-}
 .contacts-section iframe {
     border: solid gray 1px;
+}
+
+.contacts-section {
+    font-size: 14px;
+}
+
+.contacts-section h3 {
+    font-size: 18px;
 }
 
 .about-section p,
