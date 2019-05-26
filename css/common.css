@@ -62,8 +62,9 @@ body {
 }
 
 .brand-icon {
-    width: 180px;
-    margin-top: -35%;
+    width: 140px;
+    margin-top: -40%;
+    margin-bottom: -60%;
     position: relative;
     display: block;
     z-index: 100;
@@ -74,8 +75,8 @@ body {
 }
 
 .affix .brand-icon {
-    width: 120px;
-    margin-top: -10%;
+    width: 70px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -86,7 +87,7 @@ body {
 .navbar-collapse.in .navbar-nav {
     float: right !important;
     display: block;
-    padding-left: 150px;
+    padding-left: 120px;
     margin-right: -15px;
 
     -webkit-transition: padding-left 400ms;
@@ -97,7 +98,7 @@ body {
 
 .affix .navbar-collapse.collapsing .navbar-nav,
 .affix .navbar-collapse.in .navbar-nav {
-    padding-left: 110px;
+    padding-left: 60px;
 }
 
 .navbar-collapse.collapsing .navbar-nav:not(.navbar-right),
