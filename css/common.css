@@ -146,7 +146,7 @@ section {
 }
 
 section.section-first {
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 section.section-next {
@@ -158,4 +158,8 @@ a:active,
 a:focus,
 a:hover {
     outline: none;
+}
+
+h1:first-child {
+    margin-top: 0;
 }
