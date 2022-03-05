@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns:v="//vuejs.org">
 
 <head>
 
@@ -73,10 +73,11 @@
         ga('send', 'pageview');
         // @formatter:on
     </script>
-    <script src="https://unpkg.com/vue@3"></script>
-    <script src="./index.js" defer></script>
+    <script src="index.js"></script>
 </head>
 <body>
-{{ message }}
+<v:header></v:header>
+<v:main></v:main>
+<v:footer></v:footer>
 </body>
 </html>
