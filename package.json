@@ -1,0 +1,18 @@
+{
+  "name": "capoeira-tomsk.github.io",
+  "version": "2.0.0",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capoeira-tomsk/capoeira-tomsk.github.io.git"
+  },
+  "author": "Evgeniy Polyakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/capoeira-tomsk/capoeira-tomsk.github.io/issues"
+  },
+  "homepage": "https://github.com/capoeira-tomsk/capoeira-tomsk.github.io#readme",
+  "devDependencies": {
+    "vue": "^3.0.0"
+  }
+}
