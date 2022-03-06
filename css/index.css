@@ -347,6 +347,16 @@ header {
   left: 0;
   width: 100%;
   z-index: 20;
+  transition: background-color 0.2s ease;
+}
+header.scrolled {
+  background: #201C20;
+}
+header.scrolled nav {
+  padding-top: 2px;
+}
+header.scrolled nav .navbar-header img {
+  transform: scale(0.7);
 }
 header ul {
   list-style: none;
@@ -367,9 +377,15 @@ header ul li a {
 header nav {
   display: flex;
   padding-top: 10px;
+  height: 74px;
+  transition: padding-top 0.2s ease;
 }
 header nav .navbar-header {
   margin-right: auto;
+}
+header nav .navbar-header img {
+  transition: transform 0.4s ease;
+  transform-origin: top left;
 }
 header nav .navbar-collapse {
   margin-top: 14px;

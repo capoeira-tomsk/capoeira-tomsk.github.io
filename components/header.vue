@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :class="{'scrolled': scrolled}">
     <div class="container">
       <nav>
         <div class="navbar-header">
@@ -24,3 +24,20 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      scrolled: false
+    }
+  },
+  mounted() {
+    const checkScroll = () => {
+      this.scrolled = window.scrollY > 100;
+    }
+    window.addEventListener('scroll', checkScroll);
+    checkScroll();
+  }
+}
+</script>
