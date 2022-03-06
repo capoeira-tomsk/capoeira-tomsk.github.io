@@ -8,6 +8,11 @@
   color: $color-black;
   font-weight: 700;
 
+  &:active,
+  &:focus {
+    color: $color-black;
+  }
+
   &:hover {
     background: transparent;
     color: $color-white;

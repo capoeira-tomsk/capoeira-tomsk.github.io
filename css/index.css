@@ -8,6 +8,7 @@ body {
   background: #201C20;
   font-family: "Exo 2", sans-serif;
   letter-spacing: 0.1em;
+  scroll-behavior: smooth;
 }
 
 .fa {
@@ -65,6 +66,9 @@ a:hover {
   padding: 1em 2em;
   color: #201C20;
   font-weight: 700;
+}
+.btn:active, .btn:focus {
+  color: #201C20;
 }
 .btn:hover {
   background: transparent;

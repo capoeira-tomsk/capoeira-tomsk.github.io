@@ -9,9 +9,9 @@
           <!--          </button>-->
         </div>
         <ul class="navbar-collapse" id="#navbar">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#trainer">О тренере</a></li>
-          <li><a href="#contacts">Расписание</a></li>
+          <li><a href="#capoeira">Капоэйра</a></li>
+          <li><a href="#coach">О тренере</a></li>
+          <li><a href="#schedule">Расписание</a></li>
           <li><a href="#news">Новости</a></li>
           <li><a href="articles.html">Статьи</a></li>
         </ul>
