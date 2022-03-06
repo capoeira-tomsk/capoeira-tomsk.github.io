@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -6,11 +6,31 @@ body {
   color: #FFFFFF;
   box-sizing: border-box;
   background: #201C20;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Exo 2", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.fa {
+  letter-spacing: normal;
+  line-height: 1;
+}
+
+h2 {
+  line-height: 1.2;
+  font-size: 280%;
+  margin: 0 0 0.4em;
+  position: relative;
+  color: #F1C909;
 }
 
 p {
   line-height: 1.6;
+  margin: 0 0 2em;
+}
+
+em {
+  font-style: normal;
+  color: #F1C909;
 }
 
 a,
@@ -36,6 +56,35 @@ a:hover {
   }
 }
 
+.btn {
+  text-transform: uppercase;
+  background: #FFFFFF;
+  border: #FFFFFF 2px solid;
+  border-radius: 4em;
+  line-height: 1;
+  padding: 1em 2em;
+  color: #201C20;
+  font-weight: 700;
+}
+.btn:hover {
+  background: transparent;
+  color: #FFFFFF;
+}
+.btn.primary {
+  background-color: #F1C909;
+  border-color: #F1C909;
+}
+.btn.primary:hover {
+  background-color: transparent;
+  color: #F1C909;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 header ul {
   list-style: none;
   margin: 0;
@@ -60,7 +109,7 @@ header nav .navbar-header {
 }
 header nav .navbar-collapse li a {
   margin: 4px 1vw 0;
-  padding: 10px;
+  padding: 10px 6px;
 }
 header nav .navbar-collapse li a:after {
   content: "";
@@ -93,6 +142,22 @@ header nav .navbar-right li a {
 }
 header nav .navbar-right li a:hover {
   border-color: #F1C909;
+}
+
+section.top-hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/img10.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.top-hero .title {
+  padding: 2em 4em 1em;
+  border-radius: 0 40% 60% 0;
+  border-right: 4px #F1C909 solid;
 }
 
 /*# sourceMappingURL=index.css.map */

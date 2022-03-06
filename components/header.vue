@@ -16,9 +16,9 @@
           <li><a href="articles.html">Статьи</a></li>
         </ul>
         <ul class="navbar-right">
-          <li><a href="https://vk.com/capoeiratomsk" class="btn btn-round"><i class="fa fa-vk"></i></a></li>
-          <li><a href="https://www.instagram.com/capoeiratomsk/" class="btn btn-round"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="tel:+7-903-950-34-16" class="btn btn-round"><i class="fa fa-phone"></i></a></li>
+          <li><a href="https://vk.com/capoeiratomsk"><i class="fa fa-vk"></i></a></li>
+          <li><a href="https://www.instagram.com/capoeiratomsk/"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="tel:+7-903-950-34-16"><i class="fa fa-phone"></i></a></li>
         </ul>
       </nav>
     </div>

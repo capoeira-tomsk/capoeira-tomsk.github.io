@@ -1,0 +1,33 @@
+@mixin btn() {
+  text-transform: uppercase;
+  background: $color-white;
+  border: $color-white 2px solid;
+  border-radius: 4em;
+  line-height: 1;
+  padding: 1em 2em;
+  color: $color-black;
+  font-weight: 700;
+
+  &:hover {
+    background: transparent;
+    color: $color-white;
+  }
+}
+
+@mixin btn-primary() {
+  background-color: $color-brand;
+  border-color: $color-brand;
+
+  &:hover {
+    background-color: transparent;
+    color: $color-brand;
+  }
+}
+
+.btn {
+  @include btn();
+
+  &.primary {
+    @include btn-primary();
+  }
+}

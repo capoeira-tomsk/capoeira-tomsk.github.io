@@ -2,7 +2,7 @@ async function component(url) {
     const result = await fetch(url);
     if (!result.ok) throw Object.assign(new Error(`${result.statusText} ${url}`), {result});
     const text = await result.text();
-    // const time = performance.now();
+    const time = performance.now();
     const template0 = text.indexOf('<template>') + '<template>'.length;
     const template1 = text.lastIndexOf('</template>');
     const script0 = text.indexOf('<script>') + '<script>'.length;
@@ -15,6 +15,6 @@ async function component(url) {
     if (template0 >= 0 && template1 >= 0) {
         component.template = text.slice(template0, template1);
     }
-    // console.log(performance.now() - time);
+    console.log(performance.now() - time);
     return component;
 }
