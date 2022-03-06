@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 body {
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -7,12 +9,16 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+p {
+  line-height: 1.6;
+}
+
 a,
 a:focus,
 a:active {
   color: #FFFFFF;
   text-decoration: none;
-  transition: color 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
 }
 
 a:hover {
@@ -23,6 +29,70 @@ a:hover {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1240px) {
+  .container {
+    margin: 0 20px;
+  }
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header ul li {
+  margin: 0;
+}
+header ul li a {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+}
+header nav {
+  display: flex;
+  padding-top: 16px;
+}
+header nav .navbar-header {
+  margin-right: auto;
+}
+header nav .navbar-collapse li a {
+  margin: 4px 1vw 0;
+  padding: 10px;
+}
+header nav .navbar-collapse li a:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  border-radius: 20% 80% 0 0;
+  border-top: 2px transparent solid;
+  transition: transform 0.3s ease;
+  transform: scale(0);
+  transform-origin: left top;
+}
+header nav .navbar-collapse li a:hover:after {
+  border-color: #F1C909;
+  transform: none;
+}
+header nav .navbar-right {
+  margin-left: 1vw;
+}
+header nav .navbar-right li a {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  padding: 0;
+  line-height: 42px;
+  width: 42px;
+  text-align: center;
+  margin: 0 6px;
+}
+header nav .navbar-right li a:hover {
+  border-color: #F1C909;
 }
 
 /*# sourceMappingURL=index.css.map */
