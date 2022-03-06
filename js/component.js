@@ -9,8 +9,8 @@ async function component(url) {
     const script1 = text.lastIndexOf('</script>');
     let component = {};
     if (script0 >= 0 && script1 >= 0) {
-        const script = text.slice(script0, script1).replace(/\s*export default\s+/, '');
-        component = Function(`return ${script}`)();
+        const script = text.slice(script0, script1).replace('export default', 'return');
+        component = Function(script)();
     }
     if (template0 >= 0 && template1 >= 0) {
         component.template = text.slice(template0, template1);
