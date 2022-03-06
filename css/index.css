@@ -517,6 +517,33 @@ section.info .card h5 {
   color: #725A1C;
 }
 
+section.vk-members {
+  background: #F1C909;
+}
+section.vk-members .row {
+  align-items: center;
+}
+section.vk-members h2 {
+  color: #725A1C;
+  text-align: right;
+  position: relative;
+}
+section.vk-members .widget-vk {
+  position: relative;
+  max-width: 400px;
+}
+section.vk-members:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/logo-silhouette-white.png") no-repeat left 2% center;
+  background-size: auto 90%;
+  opacity: 0.2;
+}
+
 section.coach {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 100%), url("../img/img08.jpg") center no-repeat;
   background-size: cover;

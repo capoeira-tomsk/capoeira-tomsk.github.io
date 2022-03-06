@@ -1,0 +1,26 @@
+section.vk-members {
+  background: $color-brand;
+
+  .row {
+    align-items: center;
+  }
+
+  h2 {
+    color: $color-accent;
+    text-align: right;
+    position: relative;
+  }
+
+  .widget-vk {
+    position: relative;
+    max-width: 400px;
+  }
+
+  &:before {
+    content: '';
+    @include absolute-position(0, 0, 100%, 100%);
+    background: url("../img/logo-silhouette-white.png") no-repeat left 2% center;
+    background-size: auto 90%;
+    opacity: 0.2;
+  }
+}
