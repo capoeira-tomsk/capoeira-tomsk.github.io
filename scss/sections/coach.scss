@@ -1,0 +1,26 @@
+section.coach {
+  background: linear-gradient(to right, rgba($color-white, 90%) 0%, rgba($color-white, 90%) 50%, rgba($color-white, 90%) 100%), url("../img/img08.jpg") center no-repeat;
+  background-size: cover;
+  color: $color-black;
+
+  .card {
+    background: linear-gradient(to bottom, $color-white 0%, $color-white 80%, rgba($color-white, 0) 100%);
+    overflow: hidden;
+    border-radius: 80px 0 0 40%;
+    border-left: 4px $color-brand solid;
+    border-top: 4px $color-brand solid;
+    height: 100%;
+
+    h2 {
+      color: $color-accent;
+      text-align: right;
+      padding: 20px 40px 0;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      width: 100%;
+    }
+  }
+}

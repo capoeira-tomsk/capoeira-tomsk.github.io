@@ -34,6 +34,18 @@ section {
     flex-flow: row wrap;
   }
 
+  .col-auto {
+    flex: 0 0 auto;
+    max-width: 100%;
+    padding: $gap;
+  }
+
+  .col-fill {
+    flex: 1 1 0;
+    max-width: 100%;
+    padding: $gap;
+  }
+
   @for $i from 1 through 12 {
     .col#{$i} {
       flex: 0 0 100% * math.div($i, 12);

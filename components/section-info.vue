@@ -1,5 +1,5 @@
 <template>
-  <section class="info">
+  <section class="info" id="capoeira">
     <div class="container">
       <div class="row">
         <div class="col4">
