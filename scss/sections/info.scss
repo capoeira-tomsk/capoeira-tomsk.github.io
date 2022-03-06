@@ -1,0 +1,23 @@
+section.info {
+  background: $color-white;
+  color: $color-black;
+
+  .card {
+    background: $color-white;
+    overflow: hidden;
+    border-radius: 0 80px 40% 0;
+    border-right: 4px $color-brand solid;
+    border-top: 4px $color-brand solid;
+    padding: 40px;
+    height: 100%;
+    @include shadow();
+
+    h4 {
+      color: $color-accent;
+    }
+
+    p:last-child {
+      margin: 0;
+    }
+  }
+}

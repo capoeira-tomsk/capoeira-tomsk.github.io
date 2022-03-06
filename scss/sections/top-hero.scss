@@ -1,11 +1,11 @@
 section.top-hero {
   height: 100vh;
   width: 100%;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
 
   ul {
     @include no-list();
@@ -49,7 +49,7 @@ section.top-hero {
       content: '';
       @include absolute-position(0, 0, 100%, 100%);
       background: linear-gradient(to bottom, rgba(#000, 80%) 0%, rgba(#000, 40%) 100%);
-      z-index: 3;
+      z-index: 4;
     }
   }
 

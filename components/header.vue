@@ -10,7 +10,7 @@
         </div>
         <ul class="navbar-collapse" id="#navbar">
           <li><a href="#capoeira">Капоэйра</a></li>
-          <li><a href="#coach">О тренере</a></li>
+          <li><a href="#coach">Тренер</a></li>
           <li><a href="#schedule">Расписание</a></li>
           <li><a href="#news">Новости</a></li>
           <li><a href="articles.html">Статьи</a></li>

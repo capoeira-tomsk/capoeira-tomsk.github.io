@@ -1,8 +1,66 @@
+@use "sass:math";
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 100px 0;
+  position: relative;
+
+  @include small-desktop() {
+    padding: 8vw 0;
+  }
+
+  @include mobile() {
+    padding: 50px 0;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 
   @include max-width(1240px) {
     margin: 0 20px;
+  }
+
+  $gap: 20px;
+
+  .row {
+    margin: 0 #{-$gap};
+    width: calc(100% + #{2 * $gap});
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  @for $i from 1 through 12 {
+    .col#{$i} {
+      flex: 0 0 100% * math.div($i, 12);
+      width: 100% * math.div($i, 12);
+      padding: $gap;
+    }
+
+    @include mobile() {
+      .col#{$i} {
+        @if $i < 3 {
+          flex: 0 0 100% * math.div($i, 4);
+          width: 100% * math.div($i, 4);
+        } @else if ($i == 3) {
+          flex: 0 0 50%;
+          width: 50%;
+        } @else {
+          flex: 0 0 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    @include small-mobile() {
+      .col3 {
+        flex: 0 0 100%;
+        width: 100%;
+      }
+    }
   }
 }
