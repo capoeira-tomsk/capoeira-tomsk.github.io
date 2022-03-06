@@ -12,10 +12,10 @@ for (const file of [
 const components = (await readdir('components')).map(it => it.replace(/\.\w*$/, ''));
 
 files['main.js'] = /*language=JavaScript*/ `
-
     window.addEventListener('load', async () => {
         const app = Vue.createApp({});
-        await Promise.all(${JSON.stringify(components)}.map(async it => app.component('v:' + it, await component('./components/' + it + '.vue'))));
+        await Promise.all(${JSON.stringify(components)}
+            .map(async it => app.component('v:' + it, await component('./components/' + it + '.vue'))));
         app.mount(document.body);
     });
 `;
