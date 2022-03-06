@@ -16,7 +16,11 @@
     },
     "homepage": "https://github.com/capoeira-tomsk/capoeira-tomsk.github.io#readme",
     "devDependencies": {
+        "uglify-js": "latest",
+        "cpy": "latest"
+    },
+    "dependencies": {
         "vue": "^3.0.0",
-        "uglify-js": "latest"
+        "font-awesome": "^4.7.0"
     }
 }
