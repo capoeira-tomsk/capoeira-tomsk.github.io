@@ -3,36 +3,33 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 20;
 
   ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    @include no-list();
     display: flex;
 
-    li {
-      margin: 0;
-
-      a {
-        position: relative;
-        display: inline-block;
-        line-height: 1;
-        white-space: nowrap;
-      }
+    li a {
+      position: relative;
+      display: inline-block;
+      line-height: 1;
+      white-space: nowrap;
     }
   }
 
   nav {
     display: flex;
-    padding-top: 16px;
+    padding-top: 10px;
 
     .navbar-header {
       margin-right: auto;
     }
 
     .navbar-collapse {
+      margin-top: 14px;
+
       li a {
-        margin: 4px 1vw 0;
+        margin: 0 1vw;
         padding: 10px 6px;
 
         &:after {
@@ -53,6 +50,7 @@ header {
     }
 
     .navbar-right {
+      margin-top: 12px;
       margin-left: 1vw;
 
       li a {
