@@ -1,0 +1,20 @@
+body {
+  font-size: 18px;
+  color: $color-white;
+  box-sizing: border-box;
+  background: $color-black;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a,
+a:focus,
+a:active {
+  color: $color-white;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: $color-brand;
+  text-decoration: none;
+}

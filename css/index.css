@@ -1,53 +1,28 @@
-.about-section {
-    background: #ffdca6;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+body {
+  font-size: 18px;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  background: #201C20;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.trainer-section {
-    background: #f3b88c;
+a,
+a:focus,
+a:active {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.15s ease;
 }
 
-.contacts-section {
-    background: #ffdca6;
+a:hover {
+  color: #F1C909;
+  text-decoration: none;
 }
 
-.about-section .jumbotron {
-    background: #adb622;
-    color: #dee677;
-    border-radius: 16px;
-    padding: 16px 48px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.adv-heading {
-    font-size: 60%;
-    display: block;
-    margin-bottom: 1em;
-}
-
-.trainer-photo {
-    float: right;
-    display: block;
-    padding: 0 16px;
-    max-width: 100%;
-}
-
-.contacts-section iframe {
-    border: solid gray 1px;
-}
-
-.contacts-section {
-    font-size: 14px;
-}
-
-.contacts-section h3 {
-    font-size: 18px;
-}
-
-.about-section p,
-.trainer-section p {
-    text-align: justify;
-}
-
-.widget-vk,
-.widget-vk iframe {
-    width: 100% !important;
-}
+/*# sourceMappingURL=index.css.map */

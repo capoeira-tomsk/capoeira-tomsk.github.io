@@ -1,14 +1,3 @@
 <template>
-  <main>Main {{ count + 10 }}</main>
-  <input type="number" v-model="count">
+  <main>Main</main>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      count: 0
-    }
-  }
-}
-</script>

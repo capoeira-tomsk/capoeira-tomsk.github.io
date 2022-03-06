@@ -3,7 +3,8 @@
     "version": "2.0.0",
     "type": "module",
     "scripts": {
-        "build": "node build.js"
+        "build": "node build.js",
+        "scss-watch": "sass --watch scss/index.scss css/index.css"
     },
     "repository": {
         "type": "git",
@@ -17,7 +18,8 @@
     "homepage": "https://github.com/capoeira-tomsk/capoeira-tomsk.github.io#readme",
     "devDependencies": {
         "uglify-js": "latest",
-        "cpy": "latest"
+        "cpy": "latest",
+        "sass": "latest"
     },
     "dependencies": {
         "vue": "^3.0.0",
