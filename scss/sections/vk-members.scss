@@ -1,5 +1,5 @@
 section.vk-members {
-  background: $color-brand;
+  background: $color-brand-pale;
 
   .row {
     align-items: center;
@@ -19,8 +19,7 @@ section.vk-members {
   &:before {
     content: '';
     @include absolute-position(0, 0, 100%, 100%);
-    background: url("../img/logo-silhouette-white.png") no-repeat left 2% center;
+    background: url("../img/logo-silhouette-yellow.png") no-repeat left 2% center;
     background-size: auto 90%;
-    opacity: 0.2;
   }
 }

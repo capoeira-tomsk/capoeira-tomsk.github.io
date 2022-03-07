@@ -16,7 +16,7 @@
 <script>
 export default {
   mounted() {
-    VK.Widgets.Group("vk-members", {mode: 3, width: "auto", color1: 'F1C909', color2: '201C20', color3: '725A1C'}, 133258069);
+    VK.Widgets.Group("vk-members", {mode: 3, width: "auto", color1: 'FFEA8B', color2: '201C20', color3: '725A1C'}, 133258069);
   }
 }
 </script>
