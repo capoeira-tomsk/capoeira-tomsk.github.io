@@ -72,20 +72,6 @@ header {
     .navbar-right {
       margin-top: 10px;
       margin-left: 1vw;
-
-      li a {
-        border: 2px solid $color-white;
-        border-radius: 50%;
-        padding: 0;
-        line-height: 42px;
-        width: 46px;
-        text-align: center;
-        margin: 0 6px;
-
-        &:hover {
-          border-color: $color-brand;
-        }
-      }
     }
   }
 }

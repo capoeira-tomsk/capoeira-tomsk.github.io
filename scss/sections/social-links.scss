@@ -1,0 +1,21 @@
+ul.social-links {
+  @include no-list();
+  display: flex;
+
+  li a {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    border: 2px solid $color-white;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 42px;
+    width: 46px;
+    text-align: center;
+    margin: 0 6px;
+
+    &:hover {
+      border-color: $color-brand;
+    }
+  }
+}
