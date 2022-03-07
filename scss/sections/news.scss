@@ -1,0 +1,24 @@
+section.news {
+  background-color: $color-gray;
+  padding-top: 0;
+
+  &:before {
+    content: '';
+    @include absolute-position(0, 0, 100%, 100%);
+    background: url("../img/logo-silhouette-white.png") no-repeat bottom 8% left 8%;
+    opacity: 0.2;
+  }
+
+  > div {
+    position: relative;
+  }
+
+  .widget-vk iframe {
+    background: $color-white;
+    padding: 40px;
+    border-radius: 0 40px 40px 0;
+    border-right: 4px $color-accent solid;
+    @include shadow();
+    overflow: hidden;
+  }
+}
