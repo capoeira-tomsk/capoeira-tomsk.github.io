@@ -550,12 +550,13 @@ section.coach {
   color: #201C20;
 }
 section.coach .card {
-  background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 80%, rgba(255, 255, 255, 0) 100%);
+  background: #FFFFFF;
   overflow: hidden;
   border-radius: 80px 0 0 40%;
   border-left: 4px #F1C909 solid;
   border-top: 4px #F1C909 solid;
   height: 100%;
+  box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
 }
 section.coach .card h2 {
   color: #725A1C;
@@ -566,6 +567,62 @@ section.coach .card img {
   display: block;
   margin-left: auto;
   width: 100%;
+}
+
+section.schedule {
+  background: #BFBEBF;
+  color: #201C20;
+}
+section.schedule:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/logo-silhouette-white.png") no-repeat bottom 8% right 8%;
+  opacity: 0.2;
+}
+section.schedule > div {
+  position: relative;
+}
+section.schedule .card {
+  background: #FFFFFF;
+  padding: 40px;
+  border-radius: 40px 0 0 40px;
+  border-left: 4px #725A1C solid;
+  box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
+}
+section.schedule table {
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+}
+section.schedule table td, section.schedule table th {
+  padding: 0.4em 0.1em;
+  border-bottom: 1px solid rgba(32, 28, 32, 0.2);
+  vertical-align: top;
+}
+section.schedule table th {
+  color: #725A1C;
+  text-align: left;
+}
+section.schedule table thead th {
+  border-bottom: 4px double rgba(32, 28, 32, 0.2);
+}
+section.schedule p {
+  color: #725A1C;
+  font-weight: 700;
+  margin: 0 0 0.4em;
+  padding: 0 0.1em 0.4em;
+  border-bottom: 4px double rgba(32, 28, 32, 0.2);
+}
+section.schedule iframe {
+  overflow: hidden;
+  padding: 0 0 0.4em;
+  border-bottom: 1px solid rgba(32, 28, 32, 0.2);
 }
 
 /*# sourceMappingURL=index.css.map */

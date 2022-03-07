@@ -4,12 +4,13 @@ section.coach {
   color: $color-black;
 
   .card {
-    background: linear-gradient(to bottom, $color-white 0%, $color-white 80%, rgba($color-white, 0) 100%);
+    background: $color-white; //linear-gradient(to bottom, $color-white 0%, $color-white 80%, rgba($color-white, 0) 100%);
     overflow: hidden;
     border-radius: 80px 0 0 40%;
     border-left: 4px $color-brand solid;
     border-top: 4px $color-brand solid;
     height: 100%;
+    @include shadow();
 
     h2 {
       color: $color-accent;

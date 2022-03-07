@@ -1,0 +1,61 @@
+section.schedule {
+
+  background: $color-gray;
+  color: $color-black;
+
+  &:before {
+    content: '';
+    @include absolute-position(0, 0, 100%, 100%);
+    background: url("../img/logo-silhouette-white.png") no-repeat bottom 8% right 8%;
+    opacity: 0.2;
+  }
+
+  > div {
+    position: relative;
+  }
+
+  .card {
+    background: $color-white;
+    padding: 40px;
+    border-radius: 40px 0 0 40px;
+    border-left: 4px $color-accent solid;
+    @include shadow();
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+
+    td, th {
+      padding: 0.4em 0.1em;
+      border-bottom: 1px solid rgba($color-black, 20%);
+      vertical-align: top;
+    }
+
+    th {
+      color: $color-accent;
+      text-align: left;
+    }
+
+    thead th {
+      border-bottom: 4px double rgba($color-black, 20%);
+    }
+  }
+
+  p {
+    color: $color-accent;
+    font-weight: 700;
+    margin: 0 0 0.4em;
+    padding: 0 0.1em 0.4em;
+    border-bottom: 4px double rgba($color-black, 20%);
+  }
+
+  iframe {
+    overflow: hidden;
+    padding: 0 0 0.4em;
+    border-bottom: 1px solid rgba($color-black, 20%);
+  }
+}
