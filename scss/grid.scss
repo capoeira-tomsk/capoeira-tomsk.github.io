@@ -37,20 +37,20 @@ section {
   .col-auto {
     flex: 0 0 auto;
     max-width: 100%;
-    padding: $gap;
+    padding: 0 $gap;
   }
 
   .col-fill {
     flex: 1 1 0;
     max-width: 100%;
-    padding: $gap;
+    padding: 0 $gap;
   }
 
   @for $i from 1 through 12 {
     .col#{$i} {
       flex: 0 0 100% * math.div($i, 12);
       width: 100% * math.div($i, 12);
-      padding: $gap;
+      padding: 0 $gap;
     }
 
     @include mobile() {

@@ -11,7 +11,7 @@ body {
   color: #FFFFFF;
   background: #201C20;
   font-family: "Exo 2", sans-serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
 }
 
 .fa {
@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.2;
   margin: 0 0 0.4em;
   font-family: "Alegreya Sans SC", sans-serif;
+  letter-spacing: 0.01em;
 }
 
 h2 {
@@ -108,17 +109,17 @@ section {
 .container .col-auto {
   flex: 0 0 auto;
   max-width: 100%;
-  padding: 20px;
+  padding: 0 20px;
 }
 .container .col-fill {
   flex: 1 1 0;
   max-width: 100%;
-  padding: 20px;
+  padding: 0 20px;
 }
 .container .col1 {
   flex: 0 0 8.3333333333%;
   width: 8.3333333333%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col1 {
@@ -135,7 +136,7 @@ section {
 .container .col2 {
   flex: 0 0 16.6666666667%;
   width: 16.6666666667%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col2 {
@@ -152,7 +153,7 @@ section {
 .container .col3 {
   flex: 0 0 25%;
   width: 25%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col3 {
@@ -169,7 +170,7 @@ section {
 .container .col4 {
   flex: 0 0 33.3333333333%;
   width: 33.3333333333%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col4 {
@@ -186,7 +187,7 @@ section {
 .container .col5 {
   flex: 0 0 41.6666666667%;
   width: 41.6666666667%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col5 {
@@ -203,7 +204,7 @@ section {
 .container .col6 {
   flex: 0 0 50%;
   width: 50%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col6 {
@@ -220,7 +221,7 @@ section {
 .container .col7 {
   flex: 0 0 58.3333333333%;
   width: 58.3333333333%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col7 {
@@ -237,7 +238,7 @@ section {
 .container .col8 {
   flex: 0 0 66.6666666667%;
   width: 66.6666666667%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col8 {
@@ -254,7 +255,7 @@ section {
 .container .col9 {
   flex: 0 0 75%;
   width: 75%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col9 {
@@ -271,7 +272,7 @@ section {
 .container .col10 {
   flex: 0 0 83.3333333333%;
   width: 83.3333333333%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col10 {
@@ -288,7 +289,7 @@ section {
 .container .col11 {
   flex: 0 0 91.6666666667%;
   width: 91.6666666667%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col11 {
@@ -305,7 +306,7 @@ section {
 .container .col12 {
   flex: 0 0 100%;
   width: 100%;
-  padding: 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container .col12 {
@@ -432,7 +433,7 @@ footer .container p {
   flex: 1 0 0;
   font-size: 14px;
   margin: 21px 0 0;
-  border-top: 1px #FFFFFF solid;
+  border-top: 1px rgba(255, 255, 255, 0.4) solid;
 }
 footer .container p:first-child {
   margin-right: 10px;
@@ -572,16 +573,16 @@ section.vk-members .widget-vk {
 section.vk-members:before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../img/logo-silhouette-yellow.png") no-repeat left 2% center;
-  background-size: auto 90%;
+  top: -10%;
+  left: 2%;
+  width: 90%;
+  height: 95%;
+  background: url("../img/logo-silhouette-yellow.png") no-repeat left top;
+  background-size: contain;
 }
 
 section.coach {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../img/img10.jpg") center no-repeat;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("../img/coach-bg.jpg") center no-repeat;
   background-size: cover;
   color: #201C20;
 }
@@ -606,9 +607,8 @@ section.coach .card img {
 }
 
 section.schedule {
-  background: #BFBEBF;
+  background: #FFEA8B;
   color: #201C20;
-  font-size: 14px;
 }
 section.schedule:before {
   content: "";
@@ -617,8 +617,7 @@ section.schedule:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/logo-silhouette-white.png") no-repeat bottom 8% right 8%;
-  opacity: 0.2;
+  background: url("../img/logo-silhouette-yellow.png") no-repeat bottom 8% right 2%;
 }
 section.schedule > div {
   position: relative;
@@ -626,8 +625,8 @@ section.schedule > div {
 section.schedule .card {
   background: #FFFFFF;
   padding: 40px;
-  border-radius: 40px 0 0 40px;
-  border-left: 4px #725A1C solid;
+  border-radius: 0 40px 40px 0;
+  border-right: 4px #F1C909 solid;
   box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
 }
 section.schedule table {
@@ -664,7 +663,6 @@ section.schedule iframe {
 
 section.news {
   background-color: #BFBEBF;
-  padding-top: 0;
 }
 section.news:before {
   content: "";
@@ -673,7 +671,7 @@ section.news:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/logo-silhouette-white.png") no-repeat bottom 8% left 8%;
+  background: url("../img/logo-silhouette-white.png") no-repeat bottom 8% left 2%;
   opacity: 0.2;
 }
 section.news > div {
@@ -682,8 +680,8 @@ section.news > div {
 section.news .widget-vk iframe {
   background: #FFFFFF;
   padding: 40px;
-  border-radius: 0 40px 40px 0;
-  border-right: 4px #725A1C solid;
+  border-radius: 40px 0 0 40px;
+  border-left: 4px #725A1C solid;
   box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
   overflow: hidden;
 }

@@ -2,6 +2,7 @@
   <section class="schedule" id="schedule">
     <div class="container">
       <div class="row">
+        <div class="col2"></div>
         <div class="col8">
           <div class="card">
             <table>

@@ -1,14 +1,12 @@
 section.schedule {
 
-  background: $color-gray;
+  background: $color-brand-pale;
   color: $color-black;
-  font-size: 14px;
 
   &:before {
     content: '';
     @include absolute-position(0, 0, 100%, 100%);
-    background: url("../img/logo-silhouette-white.png") no-repeat bottom 8% right 8%;
-    opacity: 0.2;
+    background: url("../img/logo-silhouette-yellow.png") no-repeat bottom 8% right 2%;
   }
 
   > div {
@@ -18,8 +16,8 @@ section.schedule {
   .card {
     background: $color-white;
     padding: 40px;
-    border-radius: 40px 0 0 40px;
-    border-left: 4px $color-accent solid;
+    border-radius: 0 40px 40px 0;
+    border-right: 4px $color-brand solid;
     @include shadow();
   }
 
