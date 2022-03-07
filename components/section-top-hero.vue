@@ -22,7 +22,7 @@ export default {
       active: 1,
       next: 0,
       prev: 0,
-      slides: 4
+      slides: 11
     }
   },
   mounted() {
