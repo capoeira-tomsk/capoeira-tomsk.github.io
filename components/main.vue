@@ -12,14 +12,7 @@
 <script>
 export default {
   mounted() {
-    const hash = (location.hash || '').replace('#', '');
-    if (hash) {
-      const section = document.getElementById(hash);
-      if (section) {
-        const rect = section.getBoundingClientRect();
-        window.scrollTo({top: document.body.scrollTop + rect.top});
-      }
-    }
+    scrollToHash();
   }
 }
 </script>

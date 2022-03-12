@@ -18,3 +18,16 @@ async function component(url) {
     // console.log(performance.now() - time);
     return component;
 }
+
+function scrollToHash() {
+    requestAnimationFrame(() => {
+        const hash = (location.hash || '').replace('#', '');
+        if (hash) {
+            const section = document.getElementById(hash);
+            if (section) {
+                const rect = section.getBoundingClientRect();
+                window.scrollTo({top: document.documentElement.scrollTop + rect.top});
+            }
+        }
+    });
+}
