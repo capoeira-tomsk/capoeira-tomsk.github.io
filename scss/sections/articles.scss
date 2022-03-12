@@ -1,0 +1,45 @@
+section.articles {
+  background: $color-white;
+  color: $color-black;
+
+  h1, h2, h3, h4, h5 {
+    color: $color-accent;
+  }
+
+  article {
+    background: $color-white;
+    padding: 40px;
+    @include shadow();
+    overflow: hidden;
+    margin: 0 0 100px;
+
+    &:nth-child(even) {
+      border-radius: 0 40px 40px 0;
+      border-right: 4px $color-brand solid;
+    }
+
+    &:nth-child(odd) {
+      border-radius: 40px 0 0 40px;
+      border-left: 4px $color-brand solid;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    img {
+      margin: 0 20px 20px;
+      border-radius: 20px;
+      border-left: 4px $color-brand solid;
+      border-right: 4px $color-brand solid;
+
+      &.pull-left {
+        margin-left: 0;
+      }
+
+      &.pull-right {
+        margin-right: 0;
+      }
+    }
+  }
+}
