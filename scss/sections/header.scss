@@ -121,9 +121,25 @@ header {
         border-radius: 1px;
         background: $color-white;
         margin-bottom: 6px;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+        transform-origin: center;
 
         &:last-child {
           margin-bottom: 0;
+        }
+      }
+
+      &.open {
+        i:first-child {
+          transform: translateY(8px) rotate(45deg);
+        }
+
+        i:last-child {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+
+        i:nth-child(2) {
+          opacity: 0;
         }
       }
 

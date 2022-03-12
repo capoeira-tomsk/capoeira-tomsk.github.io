@@ -483,9 +483,20 @@ header nav .navbar-toggle i {
   border-radius: 1px;
   background: #FFFFFF;
   margin-bottom: 6px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transform-origin: center;
 }
 header nav .navbar-toggle i:last-child {
   margin-bottom: 0;
+}
+header nav .navbar-toggle.open i:first-child {
+  transform: translateY(8px) rotate(45deg);
+}
+header nav .navbar-toggle.open i:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+}
+header nav .navbar-toggle.open i:nth-child(2) {
+  opacity: 0;
 }
 @media screen and (max-width: 1024px) {
   header nav .navbar-toggle {
