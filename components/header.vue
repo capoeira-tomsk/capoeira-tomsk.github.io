@@ -13,7 +13,7 @@
           <li><a href="#coach">Тренер</a></li>
           <li><a href="#schedule">Расписание</a></li>
           <li><a href="#news">Новости</a></li>
-          <li><a href="articles.html">Статьи</a></li>
+          <li><a href="#articles">Статьи</a></li>
         </ul>
         <v:social-links xmlns:v class="navbar-right"></v:social-links>
       </nav>
