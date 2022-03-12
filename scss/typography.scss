@@ -8,6 +8,8 @@ html, body {
 body {
   padding: 0;
   margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
   font-size: 18px;
   color: $color-white;
   background: $color-black;
@@ -72,4 +74,13 @@ a:active {
 a:hover {
   color: $color-brand;
   text-decoration: none;
+}
+
+button,
+button:hover,
+button:focus,
+button:active {
+  background: none;
+  border: none;
+  border-radius: 0;
 }

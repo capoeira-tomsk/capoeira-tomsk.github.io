@@ -1,14 +1,10 @@
 <template>
-  <header :class="{'scrolled': scrolled}">
+  <header :class="{scrolled, open}">
     <div class="container">
       <nav>
-        <div class="navbar-header">
-          <a href="#" class="navbar-brand"><img class="brand-icon" src="img/brand-icon.png"/></a>
-          <!--          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">-->
-          <!--            <i class="fa fa-bars"></i>-->
-          <!--          </button>-->
-        </div>
-        <ul class="navbar-collapse" id="#navbar">
+        <a href="#" class="navbar-brand"><img class="brand-icon" src="img/brand-icon.png"/></a>
+        <span></span>
+        <ul class="navbar-collapse" :class="{open}">
           <li><a href="#capoeira">Капоэйра</a></li>
           <li><a href="#coach">Тренер</a></li>
           <li><a href="#schedule">Расписание</a></li>
@@ -16,6 +12,9 @@
           <li><a href="#articles">Статьи</a></li>
         </ul>
         <v:social-links xmlns:v class="navbar-right"></v:social-links>
+        <button type="button" class="navbar-toggle" :class="{open}" @click="open = !open">
+          <i></i><i></i><i></i>
+        </button>
       </nav>
     </div>
   </header>
@@ -25,14 +24,17 @@
 export default {
   data() {
     return {
-      scrolled: false
+      scrolled: false,
+      open: false
     }
   },
   mounted() {
     const checkScroll = () => {
       this.scrolled = window.scrollY > 100;
+      this.open = false;
     }
     window.addEventListener('scroll', checkScroll);
+    window.addEventListener('resize', checkScroll);
     checkScroll();
   }
 }

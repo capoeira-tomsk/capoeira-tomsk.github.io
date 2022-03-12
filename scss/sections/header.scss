@@ -10,10 +10,10 @@ header {
     background: $color-black;
 
     nav {
-      padding-top: 2px;
+      padding: 2px 0;
 
-      .navbar-header img {
-        transform: scale(0.7);
+      a.navbar-brand img {
+        width: 100px;
       }
     }
   }
@@ -32,22 +32,28 @@ header {
 
   nav {
     display: flex;
-    padding-top: 10px;
-    height: 74px;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 80px;
+    padding: 10px 0 0;
     transition: padding-top 0.2s ease;
 
-    .navbar-header {
+    a.navbar-brand {
+      display: block;
+      align-self: flex-start;
       margin-right: auto;
+      line-height: 0;
+      position: relative;
+      z-index: 2;
 
       img {
-        transition: transform 0.4s ease;
+        width: 140px;
+        transition: width 0.4s ease;
         transform-origin: top left;
       }
     }
 
     .navbar-collapse {
-      margin-top: 14px;
-
       li a {
         margin: 0 1vw;
         padding: 10px 6px;
@@ -67,11 +73,79 @@ header {
           transform: none;
         }
       }
+
+      @include mobile() {
+        flex-flow: column nowrap;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 0;
+        background: $color-black;
+        padding: 0 10px;
+        overflow: hidden;
+        text-align: right;
+        transition: height 0.4s ease;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 80px;
+          flex: 0 0 auto;
+        }
+
+        &.open {
+          height: 300px;
+        }
+      }
     }
 
     .navbar-right {
-      margin-top: 10px;
       margin-left: 1vw;
+    }
+
+    .navbar-toggle {
+      color: $color-white;
+      line-height: 0;
+      margin-left: 1vw;
+      padding: 0 10px;
+      height: 100%;
+      display: none;
+      position: relative;
+
+      i {
+        display: block;
+        width: 26px;
+        height: 2px;
+        border-radius: 1px;
+        background: $color-white;
+        margin-bottom: 6px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @include mobile() {
+        display: block;
+      }
+    }
+  }
+
+  @include mobile() {
+    .container {
+      padding: 0;
+    }
+
+    nav,
+    &.scrolled nav {
+      max-width: 100vw;
+      padding: 4px 10px 4px 4px;
+
+      a.navbar-brand img {
+        width: 72px;
+      }
     }
   }
 }
