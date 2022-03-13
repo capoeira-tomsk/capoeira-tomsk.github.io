@@ -16,9 +16,10 @@ import cpy from "cpy";
     files['main.js'] = /*language=JavaScript*/ `
         window.addEventListener('load', async () => {
             const app = Vue.createApp({});
-            await Promise.all(${JSON.stringify(components)}
-                .map(async it => app.component('v:' + it, await component('./components/' + it + '.vue'))));
-            app.mount(document.body);
+            Promise.all(${JSON.stringify(components)}
+                .map(it => component('components/' + it + '.vue')
+                    .then(r => app.component('v:' + it, r)))
+            ).then(() => app.mount(document.body));
         });
     `;
 
