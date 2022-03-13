@@ -14,10 +14,7 @@ section.schedule {
   }
 
   .card {
-    background: $color-white;
-    padding: 40px;
-    border-radius: 0 40px 40px 0;
-    border-right: 4px $color-brand solid;
+    @include card(0 40px 40px 0, right);
     @include shadow();
   }
 
@@ -56,5 +53,9 @@ section.schedule {
     overflow: hidden;
     padding: 0 0 0.4em;
     border-bottom: 1px solid rgba($color-black, 20%);
+  }
+
+  @include small-mobile() {
+    font-size: 14px;
   }
 }

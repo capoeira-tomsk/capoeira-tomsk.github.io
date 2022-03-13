@@ -5,7 +5,7 @@
         <a href="#" class="navbar-brand"><img class="brand-icon" src="img/brand-icon.png"/></a>
         <span></span>
         <ul class="navbar-collapse" :class="{open}">
-          <li><a href="#capoeira">Капоэйра</a></li>
+          <li><a href="#about">Капоэйра</a></li>
           <li><a href="#coach">Тренер</a></li>
           <li><a href="#schedule">Расписание</a></li>
           <li><a href="#news">Новости</a></li>

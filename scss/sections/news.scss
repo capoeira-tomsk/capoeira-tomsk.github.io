@@ -13,11 +13,8 @@ section.news {
   }
 
   .widget-vk iframe {
-    background: $color-white;
-    padding: 40px;
-    border-radius: 40px 0 0 40px;
-    border-left: 4px $color-accent solid;
+    @include card(40px 0 0 40px, left);
+    border-color: $color-accent;
     @include shadow();
-    overflow: hidden;
   }
 }

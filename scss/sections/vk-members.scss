@@ -9,11 +9,19 @@ section.vk-members {
     color: $color-accent;
     text-align: right;
     position: relative;
+
+    @include mobile() {
+      text-align: center;
+    }
   }
 
   .widget-vk {
     position: relative;
     max-width: 400px;
+
+    @include mobile() {
+      margin: 0 auto;
+    }
   }
 
   &:before {

@@ -2,18 +2,21 @@ section.info {
   background: $color-white;
   color: $color-black;
 
+  .col4 {
+    padding-bottom: 40px;
+  }
+
   .card {
-    background: $color-white;
-    overflow: hidden;
-    border-radius: 0 80px 40% 0;
-    border-right: 4px $color-brand solid;
-    border-top: 4px $color-brand solid;
-    padding: 40px;
     height: 100%;
+    @include card(0 40px 40px 0, top, right);
     @include shadow();
 
     h5 {
       color: $color-accent;
     }
+  }
+
+  @include mobile() {
+    font-size: 16px;
   }
 }

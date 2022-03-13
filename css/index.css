@@ -32,6 +32,10 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 0.01em;
 }
 
+h1 {
+  font-size: 50px;
+}
+
 h2 {
   font-size: 50px;
 }
@@ -48,6 +52,27 @@ h5 {
   font-size: 24px;
 }
 
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+}
 p {
   line-height: 1.6;
   margin: 0 0 1.6em;
@@ -115,6 +140,11 @@ section {
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 100vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px;
   }
 }
 .container .row {
@@ -630,23 +660,41 @@ section.top-hero .title {
 section.top-hero .title p {
   margin: 0 0 2.6em;
 }
+@media screen and (max-width: 1024px) {
+  section.top-hero .title {
+    padding: 2em 0 1em;
+  }
+}
 
 section.info {
   background: #FFFFFF;
   color: #201C20;
 }
+section.info .col4 {
+  padding-bottom: 40px;
+}
 section.info .card {
+  height: 100%;
+  border-radius: 0 40px 40px 0;
+  border-top: 4px #F1C909 solid;
+  border-right: 4px #F1C909 solid;
   background: #FFFFFF;
   overflow: hidden;
-  border-radius: 0 80px 40% 0;
-  border-right: 4px #F1C909 solid;
-  border-top: 4px #F1C909 solid;
   padding: 40px;
-  height: 100%;
   box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
+}
+@media screen and (max-width: 1024px) {
+  section.info .card {
+    padding: 20px;
+  }
 }
 section.info .card h5 {
   color: #725A1C;
+}
+@media screen and (max-width: 1024px) {
+  section.info {
+    font-size: 16px;
+  }
 }
 
 section.vk-members {
@@ -660,9 +708,19 @@ section.vk-members h2 {
   text-align: right;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  section.vk-members h2 {
+    text-align: center;
+  }
+}
 section.vk-members .widget-vk {
   position: relative;
   max-width: 400px;
+}
+@media screen and (max-width: 1024px) {
+  section.vk-members .widget-vk {
+    margin: 0 auto;
+  }
 }
 section.vk-members:before {
   content: "";
@@ -681,13 +739,20 @@ section.coach {
   color: #201C20;
 }
 section.coach .card {
+  border-radius: 40px 0 0 40px;
+  border-top: 4px #F1C909 solid;
+  border-left: 4px #F1C909 solid;
   background: #FFFFFF;
   overflow: hidden;
-  border-radius: 80px 0 0 40%;
-  border-left: 4px #F1C909 solid;
-  border-top: 4px #F1C909 solid;
-  height: 100%;
+  padding: 40px;
   box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
+  padding: 0;
+  height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  section.coach .card {
+    padding: 20px;
+  }
 }
 section.coach .card h2 {
   color: #725A1C;
@@ -696,8 +761,27 @@ section.coach .card h2 {
 }
 section.coach .card img {
   display: block;
-  margin-left: auto;
-  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  section.coach {
+    font-size: 16px;
+  }
+  section.coach .col-auto {
+    flex: 1 0 100%;
+    text-align: center;
+  }
+  section.coach .col-fill {
+    margin: 0 10px;
+  }
+  section.coach .card {
+    display: inline-block;
+    height: auto;
+    padding: 0;
+    margin: 0 auto 40px;
+  }
+  section.coach .card h2 {
+    text-align: center;
+  }
 }
 
 section.schedule {
@@ -717,11 +801,17 @@ section.schedule > div {
   position: relative;
 }
 section.schedule .card {
-  background: #FFFFFF;
-  padding: 40px;
   border-radius: 0 40px 40px 0;
   border-right: 4px #F1C909 solid;
+  background: #FFFFFF;
+  overflow: hidden;
+  padding: 40px;
   box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
+}
+@media screen and (max-width: 1024px) {
+  section.schedule .card {
+    padding: 20px;
+  }
 }
 section.schedule table {
   table-layout: fixed;
@@ -754,6 +844,11 @@ section.schedule iframe {
   padding: 0 0 0.4em;
   border-bottom: 1px solid rgba(32, 28, 32, 0.2);
 }
+@media screen and (max-width: 768px) {
+  section.schedule {
+    font-size: 14px;
+  }
+}
 
 section.news {
   background-color: #BFBEBF;
@@ -772,12 +867,18 @@ section.news > div {
   position: relative;
 }
 section.news .widget-vk iframe {
-  background: #FFFFFF;
-  padding: 40px;
   border-radius: 40px 0 0 40px;
-  border-left: 4px #725A1C solid;
-  box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
+  border-left: 4px #F1C909 solid;
+  background: #FFFFFF;
   overflow: hidden;
+  padding: 40px;
+  border-color: #725A1C;
+  box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
+}
+@media screen and (max-width: 1024px) {
+  section.news .widget-vk iframe {
+    padding: 20px;
+  }
 }
 
 section.articles {
@@ -788,19 +889,32 @@ section.articles h1, section.articles h2, section.articles h3, section.articles 
   color: #725A1C;
 }
 section.articles article {
-  background: #FFFFFF;
-  padding: 40px;
   box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
-  overflow: hidden;
   margin: 0 0 100px;
 }
 section.articles article:nth-child(even) {
   border-radius: 0 40px 40px 0;
   border-right: 4px #F1C909 solid;
+  background: #FFFFFF;
+  overflow: hidden;
+  padding: 40px;
+}
+@media screen and (max-width: 1024px) {
+  section.articles article:nth-child(even) {
+    padding: 20px;
+  }
 }
 section.articles article:nth-child(odd) {
   border-radius: 40px 0 0 40px;
   border-left: 4px #F1C909 solid;
+  background: #FFFFFF;
+  overflow: hidden;
+  padding: 40px;
+}
+@media screen and (max-width: 1024px) {
+  section.articles article:nth-child(odd) {
+    padding: 20px;
+  }
 }
 section.articles article:last-child {
   margin: 0;
@@ -816,6 +930,12 @@ section.articles article img.pull-left {
 }
 section.articles article img.pull-right {
   margin-right: 0;
+}
+@media screen and (max-width: 1024px) {
+  section.articles article {
+    font-size: 16px;
+    margin: 0 0 50px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

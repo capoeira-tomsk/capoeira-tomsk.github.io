@@ -63,5 +63,9 @@ section.top-hero {
     p {
       margin: 0 0 2.6em;
     }
+
+    @include mobile() {
+      padding: 2em 0 1em;
+    }
   }
 }

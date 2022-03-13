@@ -56,3 +56,16 @@
 @mixin shadow() {
   box-shadow: 0 4px 50px rgba($color-black, 0.1);
 }
+
+@mixin card($radius, $borders...) {
+  border-radius: $radius;
+  @each $border in $borders {
+    border-#{$border}: 4px $color-brand solid;
+  }
+  background: $color-white;
+  overflow: hidden;
+  padding: 40px;
+  @include mobile() {
+    padding: 20px;
+  }
+}

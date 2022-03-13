@@ -7,20 +7,15 @@ section.articles {
   }
 
   article {
-    background: $color-white;
-    padding: 40px;
     @include shadow();
-    overflow: hidden;
     margin: 0 0 100px;
 
     &:nth-child(even) {
-      border-radius: 0 40px 40px 0;
-      border-right: 4px $color-brand solid;
+      @include card(0 40px 40px 0, right);
     }
 
     &:nth-child(odd) {
-      border-radius: 40px 0 0 40px;
-      border-left: 4px $color-brand solid;
+      @include card(40px 0 0 40px, left);
     }
 
     &:last-child {
@@ -40,6 +35,11 @@ section.articles {
       &.pull-right {
         margin-right: 0;
       }
+    }
+
+    @include mobile() {
+      font-size: 16px;
+      margin: 0 0 50px;
     }
   }
 }
