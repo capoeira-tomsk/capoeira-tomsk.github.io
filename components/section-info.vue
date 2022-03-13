@@ -1,5 +1,6 @@
 <template>
-  <section class="info" id="about">
+  <section class="info">
+    <a class="anchor" id="about"></a>
     <div class="container">
       <div class="row">
         <div class="col4">

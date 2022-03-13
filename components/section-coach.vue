@@ -1,5 +1,6 @@
 <template>
-  <section class="coach" id="coach">
+  <section class="coach">
+    <a class="anchor" id="coach"></a>
     <div class="container">
       <div class="row">
         <div class="col-auto">

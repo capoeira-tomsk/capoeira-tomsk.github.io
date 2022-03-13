@@ -8,12 +8,23 @@ section {
   padding: 100px 0;
   position: relative;
 
+  .anchor {
+    display: block;
+    line-height: 0;
+    opacity: 0;
+    @include absolute-position(-20px, 0, 0, 0);
+  }
+
   @include small-desktop() {
     padding: 8vw 0;
   }
 
   @include mobile() {
     padding: 50px 0;
+
+    .anchor {
+      top: -50px;
+    }
   }
 }
 

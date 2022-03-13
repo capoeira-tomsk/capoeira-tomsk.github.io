@@ -1,7 +1,8 @@
 <template>
   <main xmlns:v>
     <v:section-top-hero></v:section-top-hero>
-    <section id="articles" class="articles">
+    <section class="articles">
+      <a class="anchor" id="articles"></a>
       <div class="container">
 
         <article>

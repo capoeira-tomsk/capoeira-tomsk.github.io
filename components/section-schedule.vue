@@ -1,5 +1,6 @@
 <template>
-  <section class="schedule" id="schedule">
+  <section class="schedule">
+    <a class="anchor" id="schedule"></a>
     <div class="container">
       <div class="row">
         <div class="col2"></div>
