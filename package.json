@@ -4,7 +4,8 @@
     "type": "module",
     "scripts": {
         "build": "node build.js",
-        "scss-watch": "sass --watch scss/index.scss css/index.css"
+        "scss-watch": "sass --watch scss/index.scss css/index.css",
+        "deploy": "npm run build && node deploy.js && cd deploy && git add * && git commit -m \"Update Capoeira\" && git pull origin && git push origin"
     },
     "repository": {
         "type": "git",
