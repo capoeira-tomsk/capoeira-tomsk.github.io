@@ -55,7 +55,7 @@ section.top-hero {
     &:after {
       content: '';
       @include absolute-position(0, 0, 100%, 100%);
-      background: rgba(#707070, 0.7);
+      background: rgba(#000, 0.4);
       z-index: 4;
     }
   }
