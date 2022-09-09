@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
   font-size: 18px;
   color: #FFFFFF;
-  background: #201C20;
+  background: #010101;
   font-family: "Exo 2", sans-serif;
   letter-spacing: 0.04em;
 }
@@ -83,7 +83,7 @@ p:last-child {
 
 em {
   font-style: normal;
-  color: #F1C909;
+  color: #f2ea2d;
 }
 
 a,
@@ -95,7 +95,7 @@ a:active {
 }
 
 a:hover {
-  color: #F1C909;
+  color: #f2ea2d;
   text-decoration: none;
 }
 
@@ -388,23 +388,24 @@ section .anchor {
   border-radius: 4em;
   line-height: 1;
   padding: 1em 2em;
-  color: #201C20;
+  color: #010101;
   font-weight: 700;
 }
 .btn:active, .btn:focus {
-  color: #201C20;
+  color: #010101;
 }
 .btn:hover {
   background: transparent;
   color: #FFFFFF;
 }
 .btn.primary {
-  background-color: #F1C909;
-  border-color: #F1C909;
+  color: #725A1C;
+  background-color: #f2ea2d;
+  border-color: #f2ea2d;
 }
 .btn.primary:hover {
   background-color: transparent;
-  color: #F1C909;
+  color: #f2ea2d;
 }
 
 header {
@@ -413,13 +414,12 @@ header {
   left: 0;
   width: 100%;
   z-index: 20;
+  background: #0e9447;
   transition: background-color 0.2s ease;
 }
-header.scrolled {
-  background: #201C20;
-}
 header.scrolled nav {
-  padding: 2px 0;
+  height: 80px;
+  padding: 4px 0;
 }
 header.scrolled nav a.navbar-brand img {
   width: 100px;
@@ -444,9 +444,9 @@ header nav {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  height: 80px;
-  padding: 10px 0 0;
-  transition: padding-top 0.2s ease;
+  height: 100px;
+  padding: 10px 0;
+  transition: padding 0.2s ease, height 0.2s ease;
 }
 header nav a.navbar-brand {
   display: block;
@@ -457,7 +457,7 @@ header nav a.navbar-brand {
   z-index: 2;
 }
 header nav a.navbar-brand img {
-  width: 140px;
+  width: 150px;
   transition: width 0.4s ease;
   transform-origin: top left;
 }
@@ -479,7 +479,7 @@ header nav .navbar-collapse li a:after {
   transform-origin: left top;
 }
 header nav .navbar-collapse li a:hover:after {
-  border-color: #F1C909;
+  border-color: #f2ea2d;
   transform: none;
 }
 @media screen and (max-width: 1024px) {
@@ -490,7 +490,7 @@ header nav .navbar-collapse li a:hover:after {
     left: 0;
     width: 100vw;
     height: 0;
-    background: #201C20;
+    background: #0e9447;
     padding: 0 20px;
     overflow: hidden;
     text-align: right;
@@ -550,15 +550,13 @@ header nav .navbar-toggle.open i:nth-child(2) {
   }
 }
 @media screen and (max-width: 1024px) {
-  header .container {
-    padding: 0;
-  }
   header nav, header.scrolled nav {
+    height: 80px;
     max-width: 100vw;
-    padding: 4px 10px 4px 4px;
+    padding: 4px 0;
   }
   header nav a.navbar-brand img, header.scrolled nav a.navbar-brand img {
-    width: 72px;
+    width: 100px;
   }
 }
 
@@ -606,7 +604,7 @@ ul.social-links li a {
   margin: 0 6px;
 }
 ul.social-links li a:hover {
-  border-color: #F1C909;
+  border-color: #f2ea2d;
 }
 
 section.top-hero {
@@ -669,13 +667,13 @@ section.top-hero ul:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6) 100px, rgba(0, 0, 0, 0) 100%);
+  background: rgba(112, 112, 112, 0.7);
   z-index: 4;
 }
 section.top-hero .title {
   padding: 2em 4em 1em;
   border-radius: 0 40% 60% 0;
-  border-right: 4px #F1C909 solid;
+  border-right: 4px #f2ea2d solid;
   position: relative;
   z-index: 5;
 }
@@ -690,7 +688,7 @@ section.top-hero .title p {
 
 section.info {
   background: #FFFFFF;
-  color: #201C20;
+  color: #010101;
 }
 section.info .col4 {
   padding-bottom: 40px;
@@ -698,12 +696,12 @@ section.info .col4 {
 section.info .card {
   height: 100%;
   border-radius: 0 40px 40px 0;
-  border-top: 4px #F1C909 solid;
-  border-right: 4px #F1C909 solid;
+  border-top: 4px #f2ea2d solid;
+  border-right: 4px #f2ea2d solid;
   background: #FFFFFF;
   overflow: hidden;
   padding: 40px;
-  box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
+  box-shadow: 0 4px 50px rgba(1, 1, 1, 0.1);
 }
 @media screen and (max-width: 1024px) {
   section.info .card {
@@ -758,16 +756,16 @@ section.vk-members:before {
 section.coach {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("../img/coach-bg.jpg") center no-repeat;
   background-size: cover;
-  color: #201C20;
+  color: #010101;
 }
 section.coach .card {
   border-radius: 40px 0 0 40px;
-  border-top: 4px #F1C909 solid;
-  border-left: 4px #F1C909 solid;
+  border-top: 4px #f2ea2d solid;
+  border-left: 4px #f2ea2d solid;
   background: #FFFFFF;
   overflow: hidden;
   padding: 40px;
-  box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
+  box-shadow: 0 4px 50px rgba(1, 1, 1, 0.1);
   padding: 0;
   height: 100%;
 }
@@ -808,7 +806,7 @@ section.coach .card img {
 
 section.schedule {
   background: #FFEA8B;
-  color: #201C20;
+  color: #010101;
 }
 section.schedule:before {
   content: "";
@@ -824,11 +822,11 @@ section.schedule > div {
 }
 section.schedule .card {
   border-radius: 0 40px 40px 0;
-  border-right: 4px #F1C909 solid;
+  border-right: 4px #f2ea2d solid;
   background: #FFFFFF;
   overflow: hidden;
   padding: 40px;
-  box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
+  box-shadow: 0 4px 50px rgba(1, 1, 1, 0.1);
 }
 @media screen and (max-width: 1024px) {
   section.schedule .card {
@@ -844,7 +842,7 @@ section.schedule table {
 }
 section.schedule table td, section.schedule table th {
   padding: 0.4em 0.1em;
-  border-bottom: 1px solid rgba(32, 28, 32, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   vertical-align: top;
 }
 section.schedule table th {
@@ -852,19 +850,19 @@ section.schedule table th {
   text-align: left;
 }
 section.schedule table thead th {
-  border-bottom: 4px double rgba(32, 28, 32, 0.2);
+  border-bottom: 4px double rgba(1, 1, 1, 0.2);
 }
 section.schedule p {
   color: #725A1C;
   font-weight: 700;
   margin: 0 0 0.4em;
   padding: 0 0.1em 0.4em;
-  border-bottom: 4px double rgba(32, 28, 32, 0.2);
+  border-bottom: 4px double rgba(1, 1, 1, 0.2);
 }
 section.schedule iframe {
   overflow: hidden;
   padding: 0 0 0.4em;
-  border-bottom: 1px solid rgba(32, 28, 32, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 }
 @media screen and (max-width: 768px) {
   section.schedule {
@@ -890,12 +888,12 @@ section.news > div {
 }
 section.news .widget-vk iframe {
   border-radius: 40px 0 0 40px;
-  border-left: 4px #F1C909 solid;
+  border-left: 4px #f2ea2d solid;
   background: #FFFFFF;
   overflow: hidden;
   padding: 40px;
   border-color: #725A1C;
-  box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
+  box-shadow: 0 4px 50px rgba(1, 1, 1, 0.1);
 }
 @media screen and (max-width: 1024px) {
   section.news .widget-vk iframe {
@@ -905,18 +903,18 @@ section.news .widget-vk iframe {
 
 section.articles {
   background: #FFFFFF;
-  color: #201C20;
+  color: #010101;
 }
 section.articles h1, section.articles h2, section.articles h3, section.articles h4, section.articles h5 {
   color: #725A1C;
 }
 section.articles article {
-  box-shadow: 0 4px 50px rgba(32, 28, 32, 0.1);
+  box-shadow: 0 4px 50px rgba(1, 1, 1, 0.1);
   margin: 0 0 100px;
 }
 section.articles article:nth-child(even) {
   border-radius: 0 40px 40px 0;
-  border-right: 4px #F1C909 solid;
+  border-right: 4px #f2ea2d solid;
   background: #FFFFFF;
   overflow: hidden;
   padding: 40px;
@@ -928,7 +926,7 @@ section.articles article:nth-child(even) {
 }
 section.articles article:nth-child(odd) {
   border-radius: 40px 0 0 40px;
-  border-left: 4px #F1C909 solid;
+  border-left: 4px #f2ea2d solid;
   background: #FFFFFF;
   overflow: hidden;
   padding: 40px;
@@ -944,8 +942,8 @@ section.articles article:last-child {
 section.articles article img {
   margin: 0 20px 20px;
   border-radius: 20px;
-  border-left: 4px #F1C909 solid;
-  border-right: 4px #F1C909 solid;
+  border-left: 4px #f2ea2d solid;
+  border-right: 4px #f2ea2d solid;
 }
 section.articles article img.pull-left {
   margin-left: 0;

@@ -53,8 +53,8 @@
   }
 }
 
-@mixin shadow() {
-  box-shadow: 0 4px 50px rgba($color-black, 0.1);
+@mixin shadow($opacity: 0.1) {
+  box-shadow: 0 4px 50px rgba($color-black, $opacity);
 }
 
 @mixin card($radius, $borders...) {

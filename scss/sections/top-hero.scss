@@ -55,7 +55,7 @@ section.top-hero {
     &:after {
       content: '';
       @include absolute-position(0, 0, 100%, 100%);
-      background: linear-gradient(to bottom, rgba(#000, 60%) 0, rgba(#000, 60%) 100px, rgba(#000, 0%) 100%);
+      background: rgba(#707070, 0.7);
       z-index: 4;
     }
   }

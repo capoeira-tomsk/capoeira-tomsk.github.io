@@ -20,6 +20,7 @@
 }
 
 @mixin btn-primary() {
+  color: $color-accent;
   background-color: $color-brand;
   border-color: $color-brand;
 
