@@ -22,20 +22,27 @@ section.top-hero {
     }
 
     li {
-      transition: transform 2s ease-in-out;
+      opacity: 0;
+
+      &.animating {
+        transition: transform 2s ease-in-out;
+      }
 
       &.prev {
         z-index: 2;
+        opacity: 1;
         transform: translateX(-100%);
       }
 
       &.next {
         z-index: 1;
+        opacity: 1;
         transform: translateX(100%);
       }
 
       &.active {
         z-index: 3;
+        opacity: 1;
         transform: none;
       }
     }
@@ -48,7 +55,7 @@ section.top-hero {
     &:after {
       content: '';
       @include absolute-position(0, 0, 100%, 100%);
-      background: linear-gradient(to bottom, rgba(#000, 80%) 0%, rgba(#000, 40%) 100%);
+      background: linear-gradient(to bottom, rgba(#000, 60%) 0, rgba(#000, 60%) 100px, rgba(#000, 0%) 100%);
       z-index: 4;
     }
   }

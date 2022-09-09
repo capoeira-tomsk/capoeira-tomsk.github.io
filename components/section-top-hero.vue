@@ -1,8 +1,8 @@
 <template>
   <section class="top-hero">
     <ul>
-      <li v-for="i in slides" :class="{active: i === active, next: i === next, prev: i === prev}">
-        <img :src="`img/img${i < 10 ? '0' + i.toString() : i}.jpg`">
+      <li v-for="i in slides" :class="{active: i === active, next: i === next, prev: i === prev, animating}">
+        <img :src="`img/hero${i}.jpg`">
       </li>
     </ul>
     <div class="container">
@@ -19,10 +19,11 @@
 export default {
   data() {
     return {
+      animating: false,
       active: 1,
       next: 0,
       prev: 0,
-      slides: 11
+      slides: 6
     }
   },
   mounted() {
@@ -30,6 +31,10 @@ export default {
     this.next = 2;
     const interval = 8000;
     const increment = () => {
+      if (document.hidden) {
+        return;
+      }
+      this.animating = true;
       this.active++;
       if (this.active > this.slides) {
         this.active = 1;
@@ -42,9 +47,8 @@ export default {
       if (this.prev < 1) {
         this.prev = this.slides;
       }
-      setTimeout(increment, interval);
     }
-    setTimeout(increment, interval);
+    setInterval(increment, interval);
   }
 }
 </script>

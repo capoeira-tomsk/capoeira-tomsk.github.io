@@ -638,18 +638,24 @@ section.top-hero ul li img {
   height: 100%;
 }
 section.top-hero ul li {
+  opacity: 0;
+}
+section.top-hero ul li.animating {
   transition: transform 2s ease-in-out;
 }
 section.top-hero ul li.prev {
   z-index: 2;
+  opacity: 1;
   transform: translateX(-100%);
 }
 section.top-hero ul li.next {
   z-index: 1;
+  opacity: 1;
   transform: translateX(100%);
 }
 section.top-hero ul li.active {
   z-index: 3;
+  opacity: 1;
   transform: none;
 }
 section.top-hero ul img {
@@ -663,7 +669,7 @@ section.top-hero ul:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.6) 100px, rgba(0, 0, 0, 0) 100%);
   z-index: 4;
 }
 section.top-hero .title {
