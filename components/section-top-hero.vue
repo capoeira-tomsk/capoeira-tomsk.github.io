@@ -9,7 +9,7 @@
       <div class="title">
         <h2><em>Учебный сезон открыт!</em></h2>
         <p>Набор детей 5-7, 9-10 и 12+ лет в зал Сибирская 64/1.<br>Хватит сидеть дома!</p>
-        <a href="#schedule" class="btn primary">Записаться</a>
+        <a href="tel:+7-903-955-63-53" class="btn primary">Записаться</a>
       </div>
     </div>
   </section>
