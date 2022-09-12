@@ -3,10 +3,16 @@ section.schedule {
   background: $color-brand-pale;
   color: $color-black;
 
+  .container {
+    max-width: 840px;
+  }
+
   &:before {
     content: '';
     @include absolute-position(0, 0, 100%, 100%);
-    background: url("../img/logo-silhouette-yellow.png") no-repeat bottom 8% right 2%;
+    background: url("../img/people-brown.svg") no-repeat bottom 4% right;
+    background-size: 30% auto;
+    opacity: 0.2;
   }
 
   > div {
@@ -29,6 +35,10 @@ section.schedule {
       padding: 0.4em 0.1em;
       border-bottom: 1px solid rgba($color-black, 20%);
       vertical-align: top;
+
+      b {
+        color: $color-accent;
+      }
     }
 
     th {
@@ -57,5 +67,12 @@ section.schedule {
 
   @include small-mobile() {
     font-size: 14px;
+  }
+
+  @include mobile() {
+    padding-bottom: 70vw;
+    &:before {
+      background-size: 96% auto;
+    }
   }
 }

@@ -5,9 +5,7 @@
       <div class="row">
         <div class="col-auto">
           <div class="card">
-            <div class="img">
-              <img src="img/coach.jpg"/>
-            </div>
+            <img src="img/coach.jpg"/>
             <h2>Дмитрий<br>Савинов</h2>
           </div>
         </div>

@@ -1,11 +1,19 @@
+@use "sass:color";
+
 section.news {
-  background-color: $color-gray;
+  background-color: lighten($color-accent3, 60%);
+
+  .container {
+    max-width: 840px;
+  }
 
   &:before {
     content: '';
     @include absolute-position(0, 0, 100%, 100%);
-    background: url("../img/logo-silhouette-white.png") no-repeat bottom 8% left 2%;
-    opacity: 0.2;
+    background: url("../img/people-white.svg") no-repeat bottom 4% right;
+    background-size: 30% auto;
+    opacity: 0.6;
+    transform: scaleX(-1);
   }
 
   > div {
@@ -16,5 +24,12 @@ section.news {
     @include card(40px 0 0 40px, left);
     border-color: $color-accent;
     @include shadow();
+  }
+
+  @include mobile() {
+    padding-bottom: 70vw;
+    &:before {
+      background-size: 96% auto;
+    }
   }
 }

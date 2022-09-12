@@ -145,16 +145,6 @@ section .anchor {
   margin: 0 auto;
   padding: 0 20px;
 }
-@media screen and (max-width: 1024px) {
-  .container {
-    max-width: 100vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 10px;
-  }
-}
 
 .row {
   margin: 0 -20px;
@@ -508,7 +498,7 @@ header nav .navbar-collapse li a:hover:after {
     height: 340px;
   }
   header nav .navbar-collapse li {
-    margin: 0 10px 10px 0;
+    margin: 0 0 10px 0;
   }
   header nav .navbar-collapse li a {
     padding: 12px 5px 6px;
@@ -786,7 +776,8 @@ section.coach .card {
   box-shadow: 0 4px 50px rgba(1, 1, 1, 0.1);
   padding: 0;
   height: 100%;
-  max-width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
 }
 @media screen and (max-width: 1024px) {
   section.coach .card {
@@ -797,9 +788,11 @@ section.coach .card h2 {
   color: #725A1C;
   text-align: right;
   padding: 20px 40px 0;
+  display: block;
 }
 section.coach .card img {
   display: block;
+  width: 300px;
 }
 @media screen and (max-width: 1024px) {
   section.coach {
@@ -813,19 +806,32 @@ section.coach .card img {
     margin: 0 10px;
   }
   section.coach .card {
-    display: inline-block;
     height: auto;
     padding: 0;
     margin: 0 auto 40px;
+    flex-flow: row nowrap;
+    align-items: center;
   }
-  section.coach .card h2 {
+  section.coach .card img, section.coach .card h2 {
+    width: 50%;
     text-align: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  section.coach .card {
+    flex-flow: column nowrap;
+  }
+  section.coach .card img, section.coach .card h2 {
+    width: 100%;
   }
 }
 
 section.schedule {
   background: #FFEA8B;
   color: #010101;
+}
+section.schedule .container {
+  max-width: 840px;
 }
 section.schedule:before {
   content: "";
@@ -834,7 +840,9 @@ section.schedule:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/logo-silhouette-yellow.png") no-repeat bottom 8% right 2%;
+  background: url("../img/people-brown.svg") no-repeat bottom 4% right;
+  background-size: 30% auto;
+  opacity: 0.2;
 }
 section.schedule > div {
   position: relative;
@@ -864,6 +872,9 @@ section.schedule table td, section.schedule table th {
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   vertical-align: top;
 }
+section.schedule table td b, section.schedule table th b {
+  color: #725A1C;
+}
 section.schedule table th {
   color: #725A1C;
   text-align: left;
@@ -888,9 +899,20 @@ section.schedule iframe {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 1024px) {
+  section.schedule {
+    padding-bottom: 70vw;
+  }
+  section.schedule:before {
+    background-size: 96% auto;
+  }
+}
 
 section.news {
-  background-color: #BFBEBF;
+  background-color: #dce5f6;
+}
+section.news .container {
+  max-width: 840px;
 }
 section.news:before {
   content: "";
@@ -899,8 +921,10 @@ section.news:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/logo-silhouette-white.png") no-repeat bottom 8% left 2%;
-  opacity: 0.2;
+  background: url("../img/people-white.svg") no-repeat bottom 4% right;
+  background-size: 30% auto;
+  opacity: 0.6;
+  transform: scaleX(-1);
 }
 section.news > div {
   position: relative;
@@ -917,6 +941,14 @@ section.news .widget-vk iframe {
 @media screen and (max-width: 1024px) {
   section.news .widget-vk iframe {
     padding: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.news {
+    padding-bottom: 70vw;
+  }
+  section.news:before {
+    background-size: 96% auto;
   }
 }
 

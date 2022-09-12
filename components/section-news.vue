@@ -2,12 +2,7 @@
   <section class="news">
     <a class="anchor" id="news"></a>
     <div class="container">
-      <div class="row">
-        <div class="col2"></div>
-        <div class="col8">
-          <div id="vk-news" class="widget-vk"></div>
-        </div>
-      </div>
+      <div id="vk-news" class="widget-vk"></div>
     </div>
   </section>
 </template>
