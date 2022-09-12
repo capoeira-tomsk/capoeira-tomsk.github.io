@@ -8,6 +8,7 @@ section.coach {
     @include shadow();
     padding: 0;
     height: 100%;
+    max-width: 300px;
 
     h2 {
       color: $color-accent;
