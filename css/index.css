@@ -661,12 +661,12 @@ section.top-hero ul:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: radial-gradient(rgba(112, 112, 112, 0.5), rgba(112, 112, 112, 0));
   z-index: 4;
 }
 section.top-hero .title {
   padding: 2em 4em 1em;
-  border-radius: 0 40% 60% 0;
+  border-radius: 60% 40% 60% 40%;
   border-right: 4px #f2ea2d solid;
   position: relative;
   z-index: 5;

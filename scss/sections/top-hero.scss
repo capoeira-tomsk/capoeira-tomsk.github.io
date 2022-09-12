@@ -53,16 +53,17 @@ section.top-hero {
     }
 
     &:after {
+      $gradient-color: #707070;
       content: '';
       @include absolute-position(0, 0, 100%, 100%);
-      background: rgba(#000, 0.4);
+      background: radial-gradient(rgba($gradient-color, 0.5), rgba($gradient-color, 0));
       z-index: 4;
     }
   }
 
   .title {
     padding: 2em 4em 1em;
-    border-radius: 0 40% 60% 0;
+    border-radius: 60% 40% 60% 40%;
     border-right: 4px $color-brand solid;
     position: relative;
     z-index: 5;
