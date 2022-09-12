@@ -141,14 +141,9 @@ section .anchor {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
-}
-@media screen and (max-width: 1240px) {
-  .container {
-    margin: 0;
-    padding: 0 20px;
-  }
+  padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -160,222 +155,227 @@ section .anchor {
     padding: 0 10px;
   }
 }
-.container .row {
+
+.row {
   margin: 0 -20px;
   width: calc(100% + 40px);
   display: flex;
   flex-flow: row wrap;
+  position: relative;
 }
-.container .col-auto {
+.row > [class*=col] {
+  position: relative;
+}
+.row > .col-auto {
   flex: 0 0 auto;
   max-width: 100%;
   padding: 0 20px;
 }
-.container .col-fill {
+.row > .col-fill {
   flex: 1 1 0;
   max-width: 100%;
   padding: 0 20px;
 }
-.container .col1 {
+.row > .col1 {
   flex: 0 0 8.3333333333%;
   width: 8.3333333333%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col1 {
+  .row > .col1 {
     flex: 0 0 25%;
     width: 25%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
-.container .col2 {
+.row > .col2 {
   flex: 0 0 16.6666666667%;
   width: 16.6666666667%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col2 {
+  .row > .col2 {
     flex: 0 0 50%;
     width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
-.container .col3 {
+.row > .col3 {
   flex: 0 0 25%;
   width: 25%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 50%;
     width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
-.container .col4 {
+.row > .col4 {
   flex: 0 0 33.3333333333%;
   width: 33.3333333333%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col4 {
+  .row > .col4 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
-.container .col5 {
+.row > .col5 {
   flex: 0 0 41.6666666667%;
   width: 41.6666666667%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col5 {
+  .row > .col5 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
-.container .col6 {
+.row > .col6 {
   flex: 0 0 50%;
   width: 50%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col6 {
+  .row > .col6 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
-.container .col7 {
+.row > .col7 {
   flex: 0 0 58.3333333333%;
   width: 58.3333333333%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col7 {
+  .row > .col7 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
-.container .col8 {
+.row > .col8 {
   flex: 0 0 66.6666666667%;
   width: 66.6666666667%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col8 {
+  .row > .col8 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
-.container .col9 {
+.row > .col9 {
   flex: 0 0 75%;
   width: 75%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col9 {
+  .row > .col9 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
-.container .col10 {
+.row > .col10 {
   flex: 0 0 83.3333333333%;
   width: 83.3333333333%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col10 {
+  .row > .col10 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
-.container .col11 {
+.row > .col11 {
   flex: 0 0 91.6666666667%;
   width: 91.6666666667%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col11 {
+  .row > .col11 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
-.container .col12 {
+.row > .col12 {
   flex: 0 0 100%;
   width: 100%;
   padding: 0 20px;
 }
 @media screen and (max-width: 1024px) {
-  .container .col12 {
+  .row > .col12 {
     flex: 0 0 100%;
     width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .col3 {
+  .row > .col3 {
     flex: 0 0 100%;
     width: 100%;
   }
@@ -724,13 +724,9 @@ section.info .card h5 {
 section.vk-members {
   background: #FFEA8B;
 }
-section.vk-members .row {
-  align-items: center;
-}
 section.vk-members h2 {
   color: #725A1C;
   text-align: right;
-  position: relative;
 }
 @media screen and (max-width: 1024px) {
   section.vk-members h2 {
@@ -746,15 +742,33 @@ section.vk-members .widget-vk {
     margin: 0 auto;
   }
 }
+section.vk-members img {
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  object-position: right;
+  object-fit: contain;
+}
 section.vk-members:before {
   content: "";
   position: absolute;
-  top: -10%;
-  left: 2%;
-  width: 90%;
-  height: 95%;
-  background: url("../img/logo-silhouette-yellow.png") no-repeat left top;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 115%;
+  background: url("../img/people-brown.svg") no-repeat top right;
   background-size: contain;
+  opacity: 0.2;
+  transform: scaleX(-1);
+}
+@media screen and (max-width: 1024px) {
+  section.vk-members {
+    padding-top: 65vw;
+  }
+  section.vk-members:before {
+    top: -8%;
+    width: 96%;
+  }
 }
 
 section.coach {
